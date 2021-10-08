@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #3D6347;
+    --secondary-color: #E9A8A5;
+}
+
+body{
+    font-family: 'Bad Script', cursive;
+    font-size: 1.5rem;
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   list-style-type: none; 
+}
+
+.container a {
+    color: var(--primary-color)
+}
+
+a {
+    text-decoration: none;
+}
+#nav-button-1 {
+    margin-right: 2%;
+}
+#nav-button-2 {
+    margin-right: 2%;
+}
+#nav-button-3 {
+    margin-right: 2%;
+}
+
+
+.centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    text-align: center;
+    color:var(--primary-color);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: var(--secondary-color);
+    font-size: 1.5rem;
+    padding: 14px 40px;
+    border-radius: 12px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+button:hover {
+    background-color:var(--primary-color);
+    color:var(--secondary-color);
+}
+
+button a {
+    color: var(--primary-color);
+}
+
+button:hover a {
+    color: var(--secondary-color);
+}
