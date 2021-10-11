@@ -11,7 +11,8 @@
 
 <!--Navigation-->
 
-<body>
+<body class="background">
+    <div>
     <header>
         <nav>
             <ul class="container">
@@ -27,6 +28,42 @@
             <h1>Vegan eating made simple</h1>
             <button type="button"><a href=#menu>Our Menu</a></button>
         </div>
+    </div>
+
+    <!--About-->
+    <div id="about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis pariatur dolorum fuga, fugiat maxime nam, dolores tempora laudantium quod at laboriosam illum accusamus corporis sapiente sunt eveniet consectetur accusantium.</p>
+        <img src="img/showcase.jpg" width="30%">
+    </div>
+
+    <!-- Contact-->
+    <div id="contact">
+        <h2>Visit us or <strong>call us today</strong></h2>
+        <p>Opening Hours<br>
+            Tues-Thurs: 11am-5pm <br>
+            Fri: 9am-7pm <br>
+            Sat-Sun: 8am-4pm <br>
+            Mon: Closed <br>
+            contacts@vegantaste.com</p>       
+    </div>
+    <form id="contact form">
+        <div class="form-control">
+            <label id="name-label" for="name">Name</label> 
+            <input type="text" name="name" id="name" placeholder="E.g. Richard" required="">
+        </div>
+        <div class="form-control">
+            <label id="email-label" for="email">E-mail</label> 
+            <input type="email" name="email" id="email" placeholder="E.g. richardhendricks@piedpiper.com" required="">
+        </div>
+        <div class="form-control">
+            <label id="message-label" for="message">Message</label>
+            <textarea id="message" name="message" rows="4" columns="4" placeholder="Message" required="">
+            </textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
    
 
 </body>
