@@ -5,67 +5,36 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
     <title>Vegan Taste</title>
 </head>
 
 <!--Navigation-->
 
 <body class="background">
-    <div>
     <header>
-        <nav>
-            <ul class="container">
-                <li id="nav-button-1"><a href="#home">Home</a></li>
-                <li id="nav-button-2"><a href="#about">About</a></li>
-                <li id="nav-button-3"><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="logo">
+            <p>Vegan Taste</p>
+        </div>
+        <nav class="top-navbar">
+            <div class="navbar-item"><a href="#home">Home</a></div>
+            <div class="navbar-item"><a href="#about">About</a></div>
+            <div class="navbar-item"><a href="#contact">Contact</a></div>
         </nav>
+
     </header>
 
-        <!--Description-->
+    <main>
         <div class="centered">
-            <h1>Vegan eating made simple</h1>
-            <button type="button"><a href=#menu>Our Menu</a></button>
+            <button type="button" id="menu-button"><a href=menu.html>Browse the Menu</a></button>
         </div>
-    </div>
-
-    <!--About-->
-    <div id="about">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis pariatur dolorum fuga, fugiat maxime nam, dolores tempora laudantium quod at laboriosam illum accusamus corporis sapiente sunt eveniet consectetur accusantium.</p>
-        <img src="img/showcase.jpg" width="30%">
-    </div>
-
-    <!-- Contact-->
-    <div id="contact">
-        <h2>Visit us or <strong>call us today</strong></h2>
-        <p>Opening Hours<br>
-            Tues-Thurs: 11am-5pm <br>
-            Fri: 9am-7pm <br>
-            Sat-Sun: 8am-4pm <br>
-            Mon: Closed <br>
-            contacts@vegantaste.com</p>       
-    </div>
-    <form id="contact form">
-        <div class="form-control">
-            <label id="name-label" for="name">Name</label> 
-            <input type="text" name="name" id="name" placeholder="E.g. Richard" required="">
+    
+        <!--Reservation-->
+        <div class="centered">
+            <button type="button"><a href=reservation-form.html>Make a Reservation</a></button>
         </div>
-        <div class="form-control">
-            <label id="email-label" for="email">E-mail</label> 
-            <input type="email" name="email" id="email" placeholder="E.g. richardhendricks@piedpiper.com" required="">
-        </div>
-        <div class="form-control">
-            <label id="message-label" for="message">Message</label>
-            <textarea id="message" name="message" rows="4" columns="4" placeholder="Message" required="">
-            </textarea>
-            <br>
-            <input type="submit" value="Submit">
-        </div>
-
-    </form>
-   
-
+    </main>
+<script src="js/app.js"></script>
 </body>
 
 </html>

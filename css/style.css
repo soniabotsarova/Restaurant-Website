@@ -1,9 +1,11 @@
 :root {
     --primary-color: #3D6347;
     --secondary-color: #E9A8A5;
+    --header-height: 76px;
 }
 
 body{
+    margin: 0;
     font-family: 'Bad Script', cursive;
     font-size: 1.5rem;
 }
@@ -14,6 +16,14 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
+
+header {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container {
    display: flex;
    justify-content: flex-end;
@@ -28,29 +38,34 @@ body{
 a {
     text-decoration: none;
 }
-#nav-button-1 {
-    margin-right: 2%;
+
+.logo {
+    padding: 0 32px;
 }
-#nav-button-2 {
-    margin-right: 2%;
+
+.top-navbar {
+    display: flex;
+    align-items: center;
 }
-#nav-button-3 {
-    margin-right: 2%;
+
+.navbar-item {
+    margin: 0 1rem;
+}
+
+main {
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .centered {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    text-align: center;
-    color:var(--primary-color);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+    padding: 1.8rem;
+} 
 
 button {
+    font-family: inherit;
     background-color: var(--secondary-color);
     font-size: 1.5rem;
     padding: 14px 40px;
@@ -70,10 +85,4 @@ button a {
 
 button:hover a {
     color: var(--secondary-color);
-}
-
-#about {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
 }
