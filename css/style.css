@@ -8,12 +8,36 @@ body{
     margin: 0;
     font-family: 'Bad Script', cursive;
     font-size: 1.5rem;
+    transition: background-image 2s;
 }
 .background {
     background: url(../img/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-hover {
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 500ms;
+}
+
+#bg-menu {
+    background: url('/img/menu.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#bg-reserv {
+    background: url('/img/reservation.jpg') no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
