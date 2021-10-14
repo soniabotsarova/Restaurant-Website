@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <title>Vegan Taste</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p>Vegan Taste</p>
+        </div>
+        <nav class="top-navbar">
+            <div class="navbar-item"><a href="index.html">Home</a></div>
+            <div class="navbar-item"><a href="#about">About</a></div>
+            <div class="navbar-item"><a href="reservation-form.html">Contact</a></div>
+        </nav>
+    </header>
+    <div class="reserv">
+        <form>
+            <h1>Reserve a Table</h1>
+            <div class="form-control">
+                <label id="name-label" for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="First Name" required="">
+                <input type="text" name="name" id="name" placeholder="Last Name" required="">
+            </div>
+            <div class="form-control">
+                <label id="email-label" for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="example@tutanota.com" required="">
+            </div>
+            <div class="form-control">
+                <label id="tel" for="tel">Phone Number</label>
+                <input type="tel" name="tel" id="tel" placeholder="712-345-6789">
+            </div>
+            <div class="form-control">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="date">Date</label>
+                <input type='date'>
+            </div>
+            <div class="form-control">
+                <label for="time">Time</label>
+                <input type='time'>
+            </div>
+            <div class="form-control">
+                <label for="message">Special requests</label>
+                <textarea id="message" name="message" rows="4" columns="4">
+            </textarea>
+                <br>
+                <input type="submit" value="Submit" class="submit-btn">
+            </div>
+
+        </form>
+        <div class="hours">
+            <h2>Opening Hours</h2>
+            <p>Tues-Thurs: 11am-5pm <br>
+                Fri: 9am-7pm <br>
+                Sat-Sun: 8am-4pm <br>
+                Mon: Closed <br>
+                contact@vegantaste.com</p>
+        <img src="img/drinks.jpg" width="400" height="500" class="img-reserv">
+        </div>
+    </div>
+
+</body>
+
+</html>
