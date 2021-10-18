@@ -21,11 +21,11 @@
         </nav>
     </header>
     <div class="reserv">
-        <form>
+        <form id="form">
             <h1>Reserve a Table</h1>
             <div class="form-control">
                 <label id="name-label" for="name">Full Name</label>
-                <input type="text" name="name" id="name" placeholder="First Name" required="">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required="">
                 <input type="text" name="name" id="name" placeholder="Last Name" required="">
             </div>
             <div class="form-control">
@@ -34,7 +34,7 @@
             </div>
             <div class="form-control">
                 <label id="tel" for="tel">Phone Number</label>
-                <input type="tel" name="tel" id="tel" placeholder="712-345-6789">
+                <input type="tel" name="tel" id="tel" placeholder="712-345-6789" required="">
             </div>
             <div class="form-control">
                 <label for="guests">Number of Guests</label>
@@ -60,7 +60,7 @@
                 <textarea id="message" name="message" rows="4" columns="4">
             </textarea>
                 <br>
-                <input type="submit" value="Submit" class="submit-btn">
+                <input type="submit" value="Submit" id="submit-btn">
             </div>
 
         </form>
@@ -73,7 +73,10 @@
                 contact@vegantaste.com</p>
         <img src="img/drinks.jpg" width="400" height="500" class="img-reserv">
         </div>
+        <div id="log"></div>
     </div>
+
+    <script src="/js/reservation-form.js"></script>
 
 </body>
 

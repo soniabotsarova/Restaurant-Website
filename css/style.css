@@ -70,6 +70,7 @@ a {
 .top-navbar {
     display: flex;
     align-items: center;
+    color: var(--primary-color);
 }
 
 .navbar-item {
@@ -168,7 +169,7 @@ input[type=text] {
     position: absolute;
 }
 
-.submit-btn {
+#submit-btn {
     background-color: var(--secondary-color);
     font-size: 20px;
     padding: 7px 16px;
@@ -176,5 +177,100 @@ input[type=text] {
     margin: 4px 2px;
     font-family: inherit;
 }
+
+
+.menu-cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;  
+}
+.menu-body {
+    background-color: #f8f8f8;
+}
+.card {
+    border: 3px solid var(--primary-color);
+    width: 80%;
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    height: 20rem;
+    width: 14rem;
+}
+
+.card:hover p {
+    visibility: hidden;
+}
+
+#breakfast-card .card:hover {
+    background-image: url(../img/showcase.jpg);
+    background-repeat: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#brunch-card .card:hover {
+    background-image: url(../img/bruch.jpg);
+    background-repeat: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#dessert-card .card:hover {
+    background-image: url(../img/dessert.jpg);
+    background-repeat: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#drinks-card .card:hover {
+    background-image: url(../img/drinks.jpg);
+    background-repeat: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .reserv {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem;
+        font-size: 1rem;
+    }
+    header {
+        font-size: 1.2rem;
+    }
+    
+    .main-btn {
+    font-size: 1.2rem;
+    }
+
+    .style-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-cards {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.3rem;
+        margin-top: 5rem;  
+        height: 16rem;
+        padding: 45px 60px;
+    }
+
+
+}
+
 
 
