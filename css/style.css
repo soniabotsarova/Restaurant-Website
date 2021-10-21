@@ -4,6 +4,14 @@
     --header-height: 76px;
 }
 
+a {
+    color:var(--primary-color);
+}
+
+a:visited {
+    color:var(--primary-color);
+}
+
 body{
     margin: 0;
     font-family: 'Bad Script', cursive;
@@ -70,7 +78,6 @@ a {
 .top-navbar {
     display: flex;
     align-items: center;
-    color: var(--primary-color);
 }
 
 .navbar-item {
@@ -182,6 +189,8 @@ input[type=text] {
 .menu-cards {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4rem;
     margin-top: 5rem;  
 }
 .menu-body {
@@ -263,6 +272,7 @@ input[type=text] {
     .menu-cards {
         display: flex;
         flex-wrap: wrap;
+        gap: 4rem;
         font-size: 1.3rem;
         margin-top: 5rem;  
         height: 16rem;
