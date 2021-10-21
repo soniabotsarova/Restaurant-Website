@@ -11,3 +11,8 @@ function logSubmit(event) {
   const log = document.getElementById('log');
   form.addEventListener('submit', logSubmit);
   
+function telValidate(tel) {
+  if (tel.value.length !=10) {
+    alert("Telephone numbers must be 10 digits!")
+  }
+}

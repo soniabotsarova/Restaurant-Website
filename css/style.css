@@ -61,6 +61,12 @@ header {
 
 a {
     text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 .logo {
@@ -91,25 +97,27 @@ main {
 
 button {
     font-family: inherit;
-    background-color: var(--secondary-color);
     font-size: 1.5rem;
     padding: 14px 40px;
-    border-radius: 12px;
+    border-radius: 0.12em;
+    border: 0.1em solid #FFFFFF;
+    box-sizing: border-box;
     color: var(--primary-color);
     text-decoration: none;
+    background-color: none;
+    font-weight: 700;
+    text-align: center;
 }
-
-button:hover {
-    background-color:var(--primary-color);
-    color:var(--secondary-color);
-}
-
-button a {
-    color: var(--primary-color);
-}
-
-button:hover a {
+    button:hover {
+    border: #E9A8A5;
     color: var(--secondary-color);
+}
+
+
+
+
+a:visited {
+    color: inherit;
 }
 
 input[type=text] {
@@ -149,6 +157,7 @@ input[type=text] {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
+    font-family: inherit;
   }
     .reserv {
     display: flex;
@@ -170,14 +179,12 @@ input[type=text] {
 }
 
 #submit-btn {
-    background-color: var(--secondary-color);
     font-size: 20px;
     padding: 7px 16px;
     text-decoration: none;
     margin: 4px 2px;
     font-family: inherit;
 }
-
 
 .menu-cards {
     display: flex;

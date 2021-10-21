@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo">
-            <p>Vegan Taste</p>
+            <p><a href="index.html">Vegan Taste</a></p>
         </div>
         <nav class="top-navbar">
             <div class="navbar-item"><a href="index.html">Home</a></div>
@@ -53,22 +53,32 @@
             </div>
             <div class="form-control">
                 <label for="time">Time</label>
-                <input type='time'>
+                <select id="time" name="time">
+                    <option value="10am">10 AM</option>
+                    <option value="11am">11 AM</option>
+                    <option value="12am">12 AM</option>
+                    <option value="1pm">1 PM</option>
+                    <option value="2pm">2 PM</option>
+                    <option value="3pm">3 PM</option>
+                    <option value="4pm">4 PM</option>
+                    <option value="5pm">5 PM</option>
+                    <option value="6pm">6 PM</option>
+                </select>
             </div>
             <div class="form-control">
                 <label for="message">Special requests</label>
                 <textarea id="message" name="message" rows="4" columns="4">
             </textarea>
                 <br>
-                <input type="submit" value="Submit" id="submit-btn">
+                <button value="submit" id="submit-btn">Reserve now</button>
             </div>
 
         </form>
         <div class="hours">
             <h2>Opening Hours</h2>
             <p>Tues-Thurs: 11am-5pm <br>
-                Fri: 9am-7pm <br>
-                Sat-Sun: 8am-4pm <br>
+                Fri: 10am-7pm <br>
+                Sat-Sun: 10am-4pm <br>
                 Mon: Closed <br>
                 contact@vegantaste.com</p>
         <img src="img/drinks.jpg" width="400" height="500" class="img-reserv">
