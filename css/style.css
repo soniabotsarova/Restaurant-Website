@@ -4,14 +4,6 @@
     --header-height: 76px;
 }
 
-a {
-    color:var(--primary-color);
-}
-
-a:visited {
-    color:var(--primary-color);
-}
-
 body{
     margin: 0;
     font-family: 'Bad Script', cursive;
@@ -74,7 +66,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: var(--secondary-color);
+    color: inherit;
 }
 
 .logo {
