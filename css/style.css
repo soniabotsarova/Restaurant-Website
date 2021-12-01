@@ -30,13 +30,13 @@ body{
 }
 
 #bg-menu {
-    background: url('/img/menu.jpg') no-repeat;
+    background: url('../img/menu.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 #bg-reserv {
-    background: url('/img/reservation.jpg') no-repeat;
+    background: url('../img/reservation.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
